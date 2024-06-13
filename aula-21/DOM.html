@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT aplicando css</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        function trocarCor(cor){
+            let color = document.getElementById('color');
+            color.style.backgroundColor = cor;
+        }
+
+    </script>
+</head>
+<body>
+    <div class="container">
+        <button id="orange" type="button" onclick="trocarCor('orange')">Laranja</button>
+        <button id="red" type="button" onclick="trocarCor('red')">Vermelho</button>
+        <button id="blue" type="button" onclick="trocarCor('blue')">Azul</button>
+        <button id="white" type="button" onclick="trocarCor('#fff')">Branco</button>
+        <button id="yellow" type="button" onclick="trocarCor('yellow')">Amarelo</button>
+    </div>
+    <div>
+        <div id="color"></div>
+    </div>
+</body>
+</html>
